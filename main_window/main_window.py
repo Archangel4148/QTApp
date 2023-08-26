@@ -17,3 +17,15 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         self.setAttribute(Qt.WA_DeleteOnClose, True)
         self.showMaximized()
+
+        self.ui.pushButton.clicked.connect(self.plusOne)
+        self.ui.pushButton_2.clicked.connect(self.minusOne)
+
+    def plusOne(self):
+        self.ui.label.setText(str(int(self.ui.label.text()) + 1))
+
+    def minusOne(self):
+        self.ui.label.setText(str(int(self.ui.label.text()) - 1))
+
+
+

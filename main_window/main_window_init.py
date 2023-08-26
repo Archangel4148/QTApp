@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from main_window import *
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -70,3 +70,4 @@ class Ui_MainWindow(object):
         self.label.setText(_translate("MainWindow", "0"))
         self.pushButton.setText(_translate("MainWindow", "+1"))
         self.pushButton_2.setText(_translate("MainWindow", "-1"))
+
