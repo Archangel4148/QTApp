@@ -39,8 +39,9 @@ class Main(QObject):
 
         # Set title for window
         self.main_window.setWindowTitle("My App")
-
+        self.main_window.setWindowIcon(QIcon("./main_window/images/trollface.png"))
         self.main_window.destroyed.connect(self.close)
+
 
     def close(self):
         # Restore output streams
